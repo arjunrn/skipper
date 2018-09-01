@@ -30,11 +30,6 @@ imports:
   - pbutil
 - name: github.com/oklog/ulid
   version: d311cb43c92434ec4072dfbbda3400741d0a6337
-- name: github.com/opentracing/opentracing-go
-  version: 1949ddbfd147afd4d964a9f00b24eb291e0e7c38
-  subpackages:
-  - ext
-  - log
 - name: github.com/prometheus/client_golang
   version: 967789050ba94deca04a5e84cce8ad472ce313c1
   subpackages:
