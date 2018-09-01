@@ -56,6 +56,7 @@ import (
 	"plugin"
 
 	ot "github.com/opentracing/opentracing-go"
+	log "github.com/sirupsen/logrus"
 )
 
 func LoadTracingPlugin(pluginDirs []string, opts []string) (tracer ot.Tracer, err error) {
@@ -64,6 +65,7 @@ func LoadTracingPlugin(pluginDirs []string, opts []string) (tracer ot.Tracer, er
 		if err == nil {
 			return tracer, nil
 		}
+		log.Error(err)
 	}
 	return nil, err
 }
